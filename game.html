@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахи - Гра</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Шахи</h1>
+    </header>
+    <main class="game-container">
+        <div id="chessboard-container">
+            </div>
+        <div class="game-info-panel">
+            <p>Поточний хід: <span id="current-turn">Білі</span></p>
+            <p id="game-status"></p> <div id="move-history">
+                <h3>Історія ходів:</h3>
+                <ul id="moves-list">
+                    </ul>
+            </div>
+            <div class="game-controls">
+                <button id="undo-move-btn">Відмінити хід</button>
+                <button id="reset-game-btn">Нова гра</button>
+                <button id="back-to-menu-btn">До меню</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Шахи. Усі права захищено.</p>
+    </footer>
+    <script src="https://unpkg.com/chess.js@1.0.0-beta.8/chess.js"></script>
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>
