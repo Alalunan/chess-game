@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахи - Налаштування</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Налаштування</h1>
+    </header>
+    <main>
+        <section class="settings-section">
+            <h2>Складність комп'ютера</h2>
+            <select id="bot-difficulty">
+                <option value="easy">Легкий</option>
+                <option value="medium">Середній</option>
+                <option value="hard">Складний</option>
+            </select>
+        </section>
+        <section class="settings-section">
+            <h2>Колір ваших фігур</h2>
+            <select id="player-color">
+                <option value="white">Білі</option>
+                <option value="black">Чорні</option>
+            </select>
+        </section>
+        <section class="settings-section">
+            <h2>Звукові ефекти</h2>
+            <input type="checkbox" id="sound-effects" checked> <label for="sound-effects">Увімкнути</label>
+        </section>
+        <div class="settings-actions">
+            <button id="save-settings-btn">Зберегти налаштування</button>
+            <button id="back-to-menu-btn-settings">До меню</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Шахи. Усі права захищено.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
